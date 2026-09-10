@@ -1,6 +1,6 @@
 # ============================================================
 # Customer Churn Analysis - Complete Project (Base R version)
-# Dataset: IBM Telco Customer Churn (real data)
+# Dataset: IBM Telco Customer Churn 
 # ============================================================
 
 library(randomForest)
