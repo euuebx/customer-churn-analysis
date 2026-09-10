@@ -1,0 +1,41 @@
+============================================================
+CUSTOMER CHURN ANALYSIS - MODEL RESULTS
+Dataset: IBM Telco Customer Churn (real data)
+============================================================
+
+Overall Churn Rate: 26.6 %
+
+--- RANDOM FOREST PERFORMANCE ---
+Accuracy:   80.24 %
+Precision:  0.655 
+Recall:     0.543 
+F1 Score:   0.594 
+AUC:        0.843 
+
+--- CONFUSION MATRIX ---
+         Actual
+Predicted  No Yes
+      No  926 171
+      Yes 107 203
+
+--- TOP FEATURES (Mean Decrease Accuracy) ---
+                        No       Yes MeanDecreaseAccuracy MeanDecreaseGini
+TotalCharges     17.556823 12.563728            27.644561        359.26351
+tenure           16.433510 17.413052            26.839808        312.62115
+MonthlyCharges   13.055646 12.598155            21.988592        316.57125
+Contract         -2.081927 21.151815            21.144836        163.01621
+InternetService   9.598926 14.389449            17.486502         72.75667
+TechSupport       4.946475 18.238488            11.835412         75.41820
+OnlineSecurity    5.282312 17.347064            10.671332         86.83515
+PaperlessBilling  1.115768 12.257936             9.439549         47.38575
+StreamingTV       7.701154  3.781529             8.901529         40.91285
+OnlineBackup      5.486853  6.006799             8.476931         49.92962
+
+============================================================
+Key Business Insights:
+- Month-to-month contracts have significantly higher churn
+- Fiber optic customers churn more than DSL
+- Electronic check payment method is associated with higher churn
+- Customers with shorter tenure are more likely to leave
+- Higher monthly charges correlate with higher churn risk
+============================================================
